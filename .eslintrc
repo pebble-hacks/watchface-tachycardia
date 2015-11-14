@@ -1,0 +1,17 @@
+{
+  "extends": "pebble",
+  "env" : {
+    "browser": true
+  },
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
+  "globals": {
+  },
+  "plugins": [
+    "react"
+  ],
+  "rules" : {
+  }
+}
