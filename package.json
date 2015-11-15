@@ -1,5 +1,5 @@
 {
-  "name": "watchface-hot-or-not",
+  "name": "watchface-tachycardia",
   "version": "0.0.1",
   "description": "Super simple watchface rating interface ",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pebble-hacks/watchface-hot-or-not.git"
+    "url": "git+https://github.com/pebble-hacks/watchface-tachycardia.git"
   },
   "author": "Keegan Lillo - keegan@pebble.com",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/pebble-hacks/watchface-hot-or-not/issues"
+    "url": "https://github.com/pebble-hacks/watchface-tachycardia/issues"
   },
-  "homepage": "https://github.com/pebble-hacks/watchface-hot-or-not#readme",
+  "homepage": "https://github.com/pebble-hacks/watchface-tachycardia#readme",
   "devDependencies": {
     "eslint": "^1.9.0",
     "eslint-config-pebble": "^1.2.0",
@@ -30,8 +30,10 @@
     "del": "^2.1.0",
     "gulp": "^3.9.0",
     "gulp-sass": "^2.1.0",
+    "gulp-sass-glob": "0.0.2",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
+    "request": "^2.65.0",
     "vinyl-source-stream": "^1.1.0"
   }
 }

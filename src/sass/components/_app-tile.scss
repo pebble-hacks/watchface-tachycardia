@@ -1,0 +1,37 @@
+.app-tile {
+
+  position: relative;
+
+  &:hover {
+
+  }
+
+  .image {
+    position: relative;
+    font-size: 0;
+
+    > img {
+      width: 100%;
+    }
+  }
+
+  &.selected > .image:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3vw solid rgba(255, 69, 0, 0.7);
+  }
+
+  > h4 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  > img {
+    max-width: 100%;
+  }
+}

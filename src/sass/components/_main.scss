@@ -1,0 +1,31 @@
+@import "../vendor/bourbon/bourbon";
+@import "../vendor/neat/neat";
+@import "../settings";
+
+.main {
+  @include outer-container();
+
+  .apps-list {
+
+    > li {
+      @include media($media-phone) {
+        @include span-columns(6);
+        @include omega(2n);
+      }
+
+      @include media($media-tablet) {
+        @include span-columns(4);
+        @include omega(3n);
+      }
+
+      @include media($media-desktop) {
+        @include span-columns(2);
+        @include omega(6n);
+      }
+
+      margin-bottom: 1.5rem;
+    }
+
+
+  }
+}
