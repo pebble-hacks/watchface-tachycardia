@@ -1,5 +1,8 @@
+@import "settings";
+
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  background: $page-background-color;
 }

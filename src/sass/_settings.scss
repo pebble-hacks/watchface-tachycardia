@@ -1,3 +1,19 @@
-$media-phone: max-width 480px;
-$media-tablet: min-width 480px max-width 1024px;
-$media-desktop: min-width 1024px;
+$ms-ratio : 1.618; // golden ratio
+$ms-base-1 : 17px;
+$ms-base-2 : 21.624px;
+
+// bourbon setting
+$em-base: $ms-base-1;
+
+@import "vendor/bourbon/bourbon";
+
+@function rms($number) {
+  @return rem(modular-scale($number, $ms-base-1 $ms-base-2, $ms-ratio));
+}
+
+$font-family: $helvetica;
+$base-font-size : modular-scale(0, $ms-base-1 $ms-base-2, $ms-ratio);
+$base-line-height : rms(1);
+
+$body-background-color : #F7F7F7;
+$page-background-color : #EDEDED;

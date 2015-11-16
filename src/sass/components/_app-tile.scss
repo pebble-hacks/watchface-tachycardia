@@ -1,6 +1,31 @@
+@import "../settings";
+@import "../mixins/sharp-shadow";
+
 .app-tile {
 
+  @include sharp-shadow();
   position: relative;
+  background: $body-background-color;
+  padding: rms(-2);
+
+  &.selected {
+    $color: #ff4700;
+
+    background: $color;
+    color: #ffffff;
+
+    &:before {
+      content: "♥";
+      font-size: rms(4);
+      line-height: rms(4);
+      color: $color;
+      position: absolute;
+      bottom: rms(-1);
+      left: rms(-1);
+      z-index: 100;
+      text-shadow: #000 1px 1px 2px;
+    }
+  }
 
   &:hover {
 
@@ -15,22 +40,17 @@
     }
   }
 
-  &.selected > .image:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 3vw solid rgba(255, 69, 0, 0.7);
-  }
+
 
   > h4 {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    font-size: rms(0);
+    line-height: rms(0);
+    padding-bottom: rms(-4);
   }
+
   > img {
     max-width: 100%;
   }

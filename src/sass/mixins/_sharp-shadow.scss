@@ -1,0 +1,9 @@
+// creates a sharp drop shadow where the bottom is twice as wide as the sides
+@mixin sharp-shadow($size : 1px , $sharp-shadow-color : #ddd) {
+	$shadow-1 : $size $size 0px 0px $sharp-shadow-color;
+	$shadow-2 : -$size $size 0px 0px $sharp-shadow-color;
+	$shadow-3 : $size 2 * $size  0px 0px $sharp-shadow-color;
+	$shadow-4 : -$size 2 * $size 0px 0px $sharp-shadow-color;
+
+	box-shadow : $shadow-1, $shadow-2, $shadow-3, $shadow-4;
+}
